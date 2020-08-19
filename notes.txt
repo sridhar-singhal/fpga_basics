@@ -1,0 +1,50 @@
+Wires Cannot be assigned values
+
+Instead of brackets {} we have begin-end or fork-join
+
+
+Sequential Statement Groups
+
+Time denoted at each step (1 clock cycle as default) is added after each statement in begin end.
+aka time is relative to the previous statements 
+begin 
+	#1 a
+	#5 b
+	#10 c
+
+end
+a is printed at 1. b is printed at 5, c is printed 16
+
+
+Parallel Statement groups 
+for-join keeps the time-line constant and we just specify times where we execute each command
+aka time is relative to a common origin
+fork 
+	#1 a
+	#5 b
+	#5 d
+	#10 c
+join
+
+a printed at 1, b and d are printed at 5, c printed at 10.
+
+
+<= is non blocking asignment, = is blocking assignment. 
+
+NBA is used in initial blocks and in always blocks. NBA's take place one step at a time, so no problem like racing etc.
+
+always @(posedge Clock) 
+   BCD0 = 0; // Usage of blocking statements should be avoided
+always @(posedge Clock) 
+   BCD1 = BCD0; 
+
+
+This won't work, racing condition.
+
+   always @(posedge Clock) 
+       BCD0 <= 0; // Recommended to use NBA
+    always @(posedge Clock) 
+       BCD1 <= BCD0; 
+This is great. Works one at a time (in sequence)
+
+deassign is something, so is assign. They are blocking statements like a = b. 
