@@ -1,0 +1,59 @@
+$date
+	Wed Aug 19 23:37:12 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_mult_16_V1 $end
+$var wire 32 ! op [31:0] $end
+$var reg 16 " a [15:0] $end
+$var reg 16 # b [15:0] $end
+$var reg 1 $ clk $end
+$scope module m1 $end
+$var wire 16 % a [15:0] $end
+$var wire 16 & b [15:0] $end
+$var reg 32 ' op [31:0] $end
+$var integer 32 ( i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+0$
+bx #
+bx "
+bx !
+$end
+#5
+1$
+#10
+b10000 (
+b1100100 !
+b1100100 '
+0$
+b1010 #
+b1010 &
+b1010 "
+b1010 %
+#15
+1$
+#20
+b10000 (
+b1011010 !
+b1011010 '
+0$
+b110 #
+b110 &
+b1111 "
+b1111 %
+#25
+1$
+#30
+0$

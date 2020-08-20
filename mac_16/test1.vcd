@@ -1,0 +1,104 @@
+$date
+	Thu Aug 20 13:52:02 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_mac_16 $end
+$var wire 64 ! op [63:0] $end
+$var reg 1 " clk $end
+$var reg 1 # clken $end
+$var reg 16 $ dataa [15:0] $end
+$var reg 16 % datab [15:0] $end
+$scope module mac1 $end
+$var wire 1 " clk $end
+$var wire 1 # clk_en $end
+$var wire 16 & dataa [15:0] $end
+$var wire 16 ' datab [15:0] $end
+$var wire 64 ( c [63:0] $end
+$var wire 32 ) a [31:0] $end
+$var reg 64 * out [63:0] $end
+$scope module a1 $end
+$var wire 64 + a [63:0] $end
+$var wire 64 , b [63:0] $end
+$var wire 64 - op [63:0] $end
+$upscope $end
+$scope module m1 $end
+$var wire 16 . a [15:0] $end
+$var wire 16 / b [15:0] $end
+$var reg 32 0 op [31:0] $end
+$var integer 32 1 i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000 1
+b110010 0
+b101 /
+b1010 .
+b1100100 -
+b110010 ,
+b110010 +
+b110010 *
+b110010 )
+b1100100 (
+b101 '
+b1010 &
+b101 %
+b1010 $
+1#
+1"
+b110010 !
+$end
+#10
+0"
+#20
+b1000111 !
+b1000111 *
+b1000111 ,
+b10000 1
+b1011100 (
+b1011100 -
+b10101 +
+b10101 )
+b10101 0
+1"
+b11 %
+b11 '
+b11 /
+b111 $
+b111 &
+b111 .
+#30
+0"
+#40
+b101001001100 !
+b101001001100 *
+b101001001100 ,
+b10000 1
+b1010001010001 (
+b1010001010001 -
+b101000000101 +
+b101000000101 )
+b101000000101 0
+1"
+b11011 %
+b11011 '
+b11011 /
+b1011111 $
+b1011111 &
+b1011111 .
+#50
+0"
+#60
+b1111001010110 (
+b1111001010110 -
+b1010001010001 !
+b1010001010001 *
+b1010001010001 ,
+1"
